@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import {useDispatch, useSelector} from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import {signInStart, signInSuccess, signInFailure} from '../redux/user/userSlice';
 
 export default function SignIn() {
@@ -37,10 +37,8 @@ export default function SignIn() {
     } catch (error) {
       dispatch(signInFailure(error.message));
     }
-    
-  setLoading(false);
-  console.log(data);
   };
+  
   return (
     <div className='p-3 max-w-lg mx-auto'>
       <h1 className='text-3xl text-center font-semibold my-7'>Sign In</h1>
