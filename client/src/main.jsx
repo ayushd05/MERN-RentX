@@ -8,8 +8,8 @@ import { Provider } from 'react-redux';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-  <PersisttGate loading ={null} persistor={persistor}>
+  <PersistGate loading ={null} persistor={persistor}>
     <App />
-  </PersisttGate> 
+  </PersistGate> 
   </Provider>,
 )
