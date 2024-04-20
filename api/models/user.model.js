@@ -16,7 +16,12 @@ const userSchema = new mongoose.Schema({
     password:{
         type: String,
         required: true,
-    }
+    },
+
+    avatar:{
+        type: String,
+        default: "https://www.pngall.com/wp-content/uploads/5/Profile.png"
+    },
 }, { timestamps: true });
 
 const User = mongoose.model('User', userSchema);
