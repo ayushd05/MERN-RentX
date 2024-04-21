@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
 
     avatar:{
         type: String,
-        default: "https://www.pngall.com/wp-content/uploads/5/Profile.png"
+        default: "https://www.pngall.com/wp-content/uploads/5/Profile.png",
     },
 }, { timestamps: true });
 
